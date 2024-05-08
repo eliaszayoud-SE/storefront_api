@@ -19,6 +19,7 @@ flower = "*"
 django-redis = "*"
 whitenoise = "*"
 gunicorn = "*"
+psycopg2 = "*"
 
 [dev-packages]
 pytest = "*"

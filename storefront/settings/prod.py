@@ -16,6 +16,12 @@ REDIS_URL = os.environ['REDIS_URL']
 
 CELERY_BROKER_URL = REDIS_URL
 
+import ssl
+
+BROKER_USE_SSL = {
+    'ssl_cert_reqs': ssl.CERT_REQUIRED,
+}
+
 CACHES = {
     "default": {
         "BACKEND": "django_redis.cache.RedisCache",

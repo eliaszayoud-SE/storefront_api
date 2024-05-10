@@ -23,9 +23,6 @@ BASE_DIR = Path(__file__).resolve().parent.parent.parent
 
 
 
-
-
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -37,7 +34,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'corsheaders',
     'rest_framework',
-    'silk',
     'django_filters',
     'djoser',
     'debug_toolbar',
@@ -61,9 +57,6 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
     
-# if DEBUG:
-#     MIDDLEWARE += ['silk.middleware.SilkyMiddleware',]
-
 ROOT_URLCONF = 'storefront.urls'
 
 CORS_ALLOWED_ORIGINS = [

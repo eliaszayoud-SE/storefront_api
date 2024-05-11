@@ -12,4 +12,4 @@ then
   python manage.py createsuperuser --no-input
 fi
 
-celery -A storefront worker
+# celery -A storefront worker
